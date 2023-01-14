@@ -1,0 +1,75 @@
+
+* {box-sizing: border-box}
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #CBC3E3;
+  font-weight: bold;
+}
+/*topnav*/
+.topnav {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid;
+    border-color:black;
+    margin: 0px 0px 10px 0px;
+  }
+  
+.topnav h3{
+    text-align: center;
+}
+
+label{
+    color: purple;
+  }
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid;
+  resize: vertical;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  outline: none;
+}
+
+/* Add padding to container elements */
+.container {
+    overflow: hidden;
+    background-color: white;
+    border: 2px solid;
+    width: 80%;
+    padding: 20px 40px 20px 40px;
+    margin: auto;
+}
+
+/*colum for fields*/
+.field{
+  float: left;
+  width: 50%;
+  padding: 5px 5px;
+}
+
+/*Button*/
+.button{
+  text-align: center;
+  float: left;
+  position: relative;
+  top: 20px;
+  width: 33%;
+  padding: 10px 10px;
+}
+#abutton{
+  overflow: hidden;
+  width: 40%;
+  height: 60px;
+  border: 1px solid;
+  background: CornflowerBlue;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  color: #e9f4fb;
+  cursor: pointer;
+}

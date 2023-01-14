@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#header-box{
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+    position: relative;
+    margin-bottom: 5px;
+    background-color: rgb(211, 243, 227);
+}
+#header-container{
+    position: absolute;
+    width: 100%;
+}
+
+#header-container h2{
+    text-align: center;
+    margin: 15px 0;
+}
+
+#header-detail{
+    display: flex;
+    text-align: center;
+}
+
+#header-info{
+    padding: 0 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 100%;
+}
+
+
+#btn-search-id{
+    border: none;
+    background-color: rgb(136, 191, 253);
+    padding: 3px 16px;
+    font-size: 16px;
+}
+
+#btn-search-id:hover{
+    background-color: gray;
+}
+
+#list{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+#list-container{
+    padding: 20px 150px 150px 150px;
+}
+
+#list-header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(150, 211, 247);
+    height: 40px;
+    text-align: center;
+}
+
+#list-header p{
+    font-weight: 600;
+    line-height: 40px;
+    width: 100%;
+}
+
+
+/* #list-row-container{
+    display: none;
+} */
+#list-row{
+    /* display: none; */
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(173, 167, 167);
+}
+
+#list-row label{
+    width: 100%;
+    text-align: center;
+}
+
+#btn-delete{
+    margin-left: 30px;
+    padding: 5px 10px;
+    background-color: rgb(247, 158, 158);
+    border: none;
+    font-size: 16px;
+}
+
+#btn-delete:hover{
+    background-color: rgb(133, 121, 121);
+    cursor: pointer;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 110px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+    background-color: rgb(211, 243, 227);
+}
+
+#footer-detail{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 15%;
+}
+
+#footer-detail .footer-info{
+    width: 100%;
+    position: relative;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#footer-detail .footer-info #update-btn{
+    right: 5%;
+    text-align: center;
+    border: none;
+    /* border-radius: 8px; */
+    padding: 2px 12px;
+    font-size: 16px;
+    background-color: deepskyblue;
+    font-weight: bold;
+    position: absolute;
+    
+}
+
+#footer-detail .footer-info #update-btn:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+
+

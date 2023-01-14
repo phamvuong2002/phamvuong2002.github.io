@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <!-- 1. h1 - h6: heading
+    2. p: paragraph
+    3. img: image
+    4. a: anchor
+    5. ul, li: unordered list, list item
+    6. table:
+    7. input:
+    8. button:
+    9. div:
+    -->
+    <head>  
+        <title>Danh sách món ăn</title>
+        <meta charset="utf-8">
+        <style>
+            
+        </style>
+        <!-- external -->
+        <link rel="stylesheet" href="./css/DanhSachMonAn.css"> 
+        <script src="./js/DanhSachMonAn.js"> </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>     
+    </head>
+
+    <body onpageshow="start()">
+        <header class="middle">Tìm kiếm thông tin món ăn của cửa hàng</header>
+            <div class="container">
+                <div style="text-align: center;", class="vertical-center">
+                    <input id="store", type="text", placeholder="Cửa hàng">                    
+                    <button onclick="getDisks()" id="search">Tìm kiếm</button> 
+
+                    <p class="block">Giỏ hàng: </p>
+                    <a id="SoLuong" href="./ChiTietDonHang.html" role="button">
+                    </a>
+                </div>
+            </div>
+        <main>
+            <div class="food"></div>
+            <div  style="border:none;" class="container">
+                <div style="text-align: center;", class="vertical-center">
+                    <button id = "redirect" onclick="emptyStorage()">
+                        Tìm theo món ăn
+                    </button>
+                </div>
+            </div>
+        </main>   
+        <div style="margin-top:1%; text-align: center">
+            <a id="redirect" href="./index.html" role="button" style="padding: 10px 20px">
+                <i class="glyphicon glyphicon-home" style="font-size: 20px"></i>
+            </a>
+        </div>   
+    </body>
+</html>

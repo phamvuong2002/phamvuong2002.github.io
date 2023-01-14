@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC ship</title>
+    <link rel="stylesheet" href="../register/assets/style.css">
+    
+</head>
+<body>
+    <div class="register">
+       <h1>Đăng kí thông tin tài xế</h1>
+       <p id = "annouce">Nhập các thông tin cần thiết để đăng kí:</p>
+       <form id = "signupForm">
+            <div class="form_container">
+                <div class="column">
+                    <!-- <label class="row">
+                        Mã tài xế
+                        <div class="txt_field">
+                            <input type="text" name = "MATX" placeholder="Ex: 123456789" required>
+                        </div>
+                    </label> -->
+
+                    <label class="row">
+                        CMND/CCCD
+                        <div class="txt_field">
+                            <input type="text" name = "CMND" placeholder="Ex: 123456789" required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Họ tên
+                        <div class="txt_field">
+                            <input type="text" name = "HOTEN" placeholder="Ex: Nguyễn Văn A" required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Số điện thoại
+                        <div class="txt_field">
+                            <input type="text" name = "SDT" placeholder="Ex: 123456789" required>
+                        </div>
+                    </label>
+
+    
+                    <label class="row">
+                        Biển số
+                        <div class="txt_field">
+                            <input type="text" name = "BIENSO" placeholder="Ex: 59X3-12345" required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Khu vực hoạt động
+                        <div class="txt_field">
+                            <input type="text" name = "KHUVUCHD" placeholder="Ex: Quận 10" required>
+                        </div>
+                    </label>
+                </div>
+                
+
+                <div class="column">
+                    <label class="row">
+                        Email
+                        <div class="txt_field">
+                            <input type="email" name = "EMAIL" placeholder="Ex: conan0405@gmail.com" required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Username
+                        <div class="txt_field">
+                            <input type="text" name = "USERNAME" placeholder="Ex: conan0405" required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Mật khẩu
+                        <div class="txt_field">
+                            <input type="password" name = "MK" required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Số tài khoản ngân hàng
+                        <div class="txt_field">
+                            <input type="text" name = "STK" placeholder="Ex: 123456789" required>
+                        </div>
+                    </label>
+                </div>
+                
+            </div>
+            <div class = "reg-button">
+                <button onclick="getData()" type="submit" id="signupButton">Đăng kí</button>
+            </div>
+            
+       </form>
+    </div>
+    <script src="./func.js"></script>
+</body>
+</html>

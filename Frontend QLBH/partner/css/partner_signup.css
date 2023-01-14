@@ -1,0 +1,85 @@
+
+* {box-sizing: border-box}
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: Beige;
+}
+h1, label{
+  color: purple;
+}
+/* Full-width input fields */
+  input[type=text], input[type=password], input[type = time], input[type = number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  resize: vertical;
+  border-radius:15px;
+  border:0;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/*colum for fields*/
+.colum{
+  float: left;
+  width: 50%;
+  padding: 5px 5px;
+}
+
+/*after send info*/
+.new_colum{
+  float: left;
+  width: 50%;
+  padding: 20px 20px;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+  border-radius:15px;
+  margin: 20px 0 20px 0;
+}
+
+/*topnav*/
+.topnav {
+  border-radius: 10px;
+  background-color: #E6E6FA;
+  padding: 1px;
+  box-shadow: #A9A9A9 2px 2px;
+}
+
+.topnav h3{
+  text-align: center;
+}
+
+/*Button*/
+.button{
+  text-align: center;
+}
+#signupButton{
+  position: relative;
+  top: 25px;
+  width: 20%;
+  height: 50px;
+  border: 1px solid;
+  background: CornflowerBlue;
+  border-radius: 15px;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #e9f4fb;
+  cursor: pointer;
+}
+.button:hover{
+  opacity:1;
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#header-box{
+    height: 80px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
+    position: relative;
+    margin-bottom: 15px;
+    background-color: rgb(211, 243, 227);
+}
+
+#header-box h2{
+    text-align: center;
+    position: absolute;
+    margin: 20px 0;
+    width: 100%;
+}
+
+#list{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+#list-container{
+    padding: 20px 150px;
+}
+
+#list-header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(150, 211, 247);
+    height: 40px;
+    text-align: center;
+}
+
+#list-header p{
+    font-weight: 600;
+    line-height: 40px;
+    width: 100%;
+}
+#list-header #width-3{
+    width: 40%;
+}
+
+/* #list-row-container{
+    display: none;
+} */
+#list-row{
+    /* display: none; */
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(173, 167, 167);
+}
+
+#list-row label{
+    width: 100%;
+    text-align: center;
+}
+
+#list-row #stt{
+    width: 40%;
+    text-align: center;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+    background-color: rgb(211, 243, 227);
+}
+
+#footer-info{
+    text-align: center;
+    width: 100%;
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#btn-select{
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    right: 0;
+    margin-right: 30px;
+    border: none;
+    background-color: rgb(30, 231, 198);
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 12px;
+}
+
+#btn-select:hover{
+    background-color: rgb(124, 123, 123);
+    cursor: pointer;
+}

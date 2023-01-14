@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>Đánh giá</title>
+        <meta charset="utf-8">
+        <style>
+            
+        </style>
+        <!-- external -->
+        <link rel="stylesheet" href="./css/DanhGia.css"> 
+        <script src="./js/DanhGia.js"> </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>  
+    </head>
+
+    <body onpageshow="start()">
+        <header class="middle">Đánh giá</header>
+            <div class="container" style="width: 100%">
+                <div class="vertical-center">          
+                    <!-- <label id="CuaHang", for="">Cửa hàng</label> -->
+                    <label id="KhachHang", for="">Mã khách hàng</label>
+                </div>
+            </div>
+        <main>
+            <div class="bill"></div>
+            <div style="margin-top:1.5%;">
+                <a class="button" role="button" onclick="confirm()" style="padding: 0.5%; border: 1px solid black;">
+                    Đánh giá
+                </a>             
+            </div>
+            <div style="margin-top:1%;">
+                <a id="redirect" href="./index.html" role="button" style="padding: 10px 20px">
+                    <i class="glyphicon glyphicon-home" style="font-size: 20px"></i>
+                </a>
+            </div>      
+        </main>  
+    </body>
+</html>

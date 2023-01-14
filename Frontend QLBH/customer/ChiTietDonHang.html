@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>Chi tiết đơn hàng</title>
+        <meta charset="utf-8">
+        <style>
+            
+        </style>
+        <!-- external -->
+        <link rel="stylesheet" href="./css/ChiTietDonHang.css"> 
+        <script src="./js/ChiTietDonHang.js"> </script>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+
+    <body onpageshow="start()">
+        <header class="middle">Chi tiết đơn hàng</header>
+            <div class="container">
+                <div class="vertical-center">          
+                    <!-- <label id="CuaHang", for="">Cửa hàng</label> -->
+                    <label id="KhachHang", for="">Mã khách hàng</label>
+                </div>
+            </div>
+        <main>
+            <div class="bill"></div>
+            <div>
+                <select id="payment", name="Hình thức thanh toán">
+                    <option value ="null">Hình thức thanh toán</option>
+                    <option value ="COD">COD</option>
+                    <option value ="Trực tuyến">Internet banking</option>
+                </select>
+                <input id="address" type="text" placeholder="Địa chỉ giao hàng">
+            </div>
+            <div style="margin-top:1%; font-size: 20px">
+                Tiền ship: <label id="ship", style="margin-right:4%">0</label>
+                
+                Tổng tiền: <label id="sum">0</label>
+            </div>
+            <div style="margin-top:1.5%; ">
+                <a class="button" role="button" onclick="pay()" style="padding: 0.5%; border: 1px solid black;">
+                    Thanh toán
+                </a>             
+            </div>
+            
+        </main>  
+    </body>
+</html>

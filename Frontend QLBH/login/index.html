@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC ship</title>
+    <link rel="stylesheet" href="../login/assets/style.css">
+</head>
+
+<body>
+    <div class="login-box">
+        <h1>ABC FOOD ONLINE</h1>
+        <h2>Log-in</h2>
+        <p>Enter your username and password below</p>
+        <form method="post">
+            <label>
+                USERNAME
+                <div class="txt_field">
+                    <input type="text" name="username" placeholder="username" required>
+                </div>
+            </label>
+            <label>
+                PASSWORD
+                <div class="txt_field">
+                    <input type="password" name="password" placeholder="password" required>
+                </div>
+            </label>
+
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" onclick="partnerLogin()" value="Login As Partner">
+            <input type="submit" onclick="shipperLogin()" value="Login As Shipper" style="background-color: pink;">
+            <input type="submit" onclick="staffLogin()" value="Login As Staff"
+                style="background-color: rgb(234, 192, 255);">
+            <div class="signup_link">
+                <!-- Not a member? <a href="../create-acc">Create Account</a> -->
+                Tạo Tài Khoản Cho 
+                <select name="forma" onchange="location = this.value;">
+                    <option value="" selected="selected" 
+                    disabled="disabled">Chọn Đối Tượng</option>
+                    <option value="/partner/partner_signup.html">Đối Tác</option>
+                    <option value="/driver/register/index.html">Tài Xế</option>
+                    <option value="/staff/signup/index.html">Nhân Viên</option>
+                   </select>
+            </div>
+        </form>
+    </div>
+
+    <script src="/login/login_script.js"></script>
+</body>
+
+</html>

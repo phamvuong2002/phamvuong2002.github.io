@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC WEB</title>
+    <link rel="stylesheet" href="../homepage/assets/style.css">
+</head>
+<body>
+    <div id="header-box">
+        <h2>ABC WEB</h2>
+        <div id="header-detail">
+            <div class="header-row">
+                <p>Mã tài xế </p>
+                <!-- <label>test</label>  -->
+                
+            </div>
+
+            <div class="header-row">
+                <p>Tên tài xế </p>
+                <!-- <label>test</label>  -->
+                
+            </div>
+            <div class="header-row">
+                <p>Số điện thoại </p>
+                <!-- <label>test</label>   -->
+                
+                
+            </div>
+            <div class="header-row">
+                <p>Số tài khoản </p>
+                <!-- <label>test</label>  -->
+                
+            </div>
+            <div class="header-row">
+                <p>Tình Trạng Nộp Phí </p>
+                <!-- <label>test</label>  -->
+                
+            </div>
+        </div>
+    </div>
+    <div id="list-nextPage">
+        <form>
+            <div class = "nextPage">
+                <!-- href="../DH_Cho/index.html" -->
+                <a onclick = "checkStatus('../DH_Cho/index.html')" >Danh sách đơn chờ</a>
+            </div>
+            <div class = "nextPage">
+                <a  onclick = "checkStatus('../DH_DangGiao/index.html')">Danh sách đơn đang giao</a>
+            </div>
+            <div class = "nextPage">
+                <a  onclick = "checkStatus('../DH_GiaoThanhCong/index.html')">Danh sách đơn giao thành công</a>
+            </div>
+            <div class = "nextPage">
+                <a onclick = "checkStatus2('../kichhoat/index.html')" >Kích hoạt tài khoản</a>
+            </div>
+            <div class = "nextPage">
+                <a onclick = "location.href = '/driver/viewinfo/'" >Xem Thông Tin Chung</a>
+            </div>
+            <div class = "nextPage">
+                <a  href="/login/index.html" onclick = "logout()">Đăng xuất</a>
+            </div>
+        </form>
+    </div>
+    <script src="./func.js"></script>
+</body>
+</html>

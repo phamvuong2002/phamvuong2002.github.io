@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Partner Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/partner/css/index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('/partner/img/background.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <button class="button-80"  role="button" onclick="logout()" style="float: right;">Đăng Xuất</button>
+  <div id = "welcome" class="w3-display-topleft w3-padding-large w3-xlarge">
+    <!-- announce -->
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">PARTNER FUNCTIONS</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <div class="">
+        <div class="button-wrapper" data-tippy-content="Click to copy button 80">
+          <button class="button-81" role="button" onclick="tomenupage()">Quản Lý Món Ăn </button>
+          <button class="button-81" role="button" onclick="location.href='manage_restaurants.html'">Quản Lý Cửa Hàng </button>
+          <button class="button-81" role="button" onclick="location.href='get_contracts_by_partnerID.html'">Quản Lý Hợp Đồng </button>
+          <button class="button-81" role="button" onclick="location.href='/partner/viewInfoPartner.html'">Xem Thông Tin</button>
+        </div>
+    </div>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Copyright w3schools 
+    Edit by PhamVuong
+  </div>
+</div>
+<script>
+    function tomenupage(){
+        location.href = "./manage_menu.html"
+    }
+    function tosignuppage(){
+        location.href = "./partner_signup.html"
+    }
+    function logout(){
+      sessionStorage.clear()
+      location.reload()
+    }
+    let PARTNERID = sessionStorage.getItem("masothue");
+    if(PARTNERID === null){
+      location.href = '/login/index.html'
+    }
+    console.log("PARTNERID: ", PARTNERID)
+    let content = "PARTNER PAGE: " + PARTNERID
+    document.getElementById("welcome").innerHTML = content
+</script>
+</body>
+</html>

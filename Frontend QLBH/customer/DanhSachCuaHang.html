@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>Danh sách cửa hàng</title>
+        <meta charset="utf-8">
+        <style>
+            
+        </style>
+        <!-- external -->
+        <link rel="stylesheet" href="./css/DanhSachCuaHang.css"> 
+        <script src="./js/DanhSachCuaHang.js"> </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>    
+    </head>
+
+    <body onpageshow="start()">
+        <header class="middle">Tìm kiếm món ăn</header>
+            <div class="container">
+                <div style="text-align: center;", class="vertical-center">
+                    <input id="disk", type="text", placeholder="Tên món">
+                    <button onclick="getStores()" id="search">Tìm kiếm</button> 
+
+                    <p class="block">Giỏ hàng: </p>
+                    <a id="SoLuong" href="./ChiTietDonHang.html" role="button">
+                      </a>
+                </div>
+            </div>
+        <main>
+            <div class="brand"></div>
+            <div  style="border:none;" class="container">
+                <div style="text-align: center;", class="vertical-center">
+                    <button id = "redirect" onclick="emptyStorage()">
+                        Tìm theo món ăn
+                    </button>
+                </div>  
+            </div>
+        </main>
+        <div style="margin-top:1%; text-align: center">
+            <a id="redirect" href="./index.html" role="button" style="padding: 10px 20px">
+                <i class="glyphicon glyphicon-home" style="font-size: 20px"></i>
+            </a>
+        </div> 
+    </body>
+</html>

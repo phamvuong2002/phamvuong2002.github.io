@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhân Viên ABC</title>
+    <link rel="stylesheet" href="/staff/homepage/assets/style.css">
+</head>
+<body>
+    <div id="header-box">
+        <h2>Nhân Viên ABC</h2>
+        <div id="header-detail">
+            <div class="header-row">
+                <p>Mã nhân viên </p>
+                <!-- <label>test</label>  -->
+                
+            </div>
+
+            <div class="header-row">
+                <p>Tên nhân viên </p>
+                <!-- <label>test</label>  -->
+                
+            </div>
+            <div class="header-row">
+                <p>Số điện thoại </p>
+                <!-- <label>test</label>   -->
+                
+                
+            </div>
+            <div class="header-row">
+                <p>Vai Trò </p>
+                <!-- <label>test</label>  -->
+                
+            </div>
+        </div>
+    </div>
+    <div id="list-nextPage">
+        <form>
+            <div class = "colum">
+                <div class = "nextPage">
+                    <a onclick = "location.href = '/staff/approvalcontract/index.html'" >Duyệt Hợp Đồng</a>
+                </div>
+            </div>
+            <div class = "colum">
+                <div class = "nextPage">
+                    <a  onclick = "location.href='/staff/managedcontract/index.html'">Danh sách hợp đồng quản lý</a>
+                </div>
+            </div>
+            
+            <div class = "colum">
+                <div class = "nextPage">
+                    <a  onclick = "location.href='/staff/statistics/index.html'">Thống Kê Hoá Đơn</a>
+                </div>
+            </div>
+            
+            <div class = "colum">
+                <div class = "nextPage">
+                    <a onclick = "check('/staff/managedstaff/index.html')" >Danh Sách Nhân Viên Quản Lý</a>
+                </div>
+            </div>
+
+            <div class = "colum">
+                <div class = "nextPage">
+                    <a onclick = "check('/staff/approvalstaff/index.html')" >Danh Sách Nhân Viên Chờ Duyệt</a>
+                </div>
+            </div>
+
+            <div class = "colum">
+                <div class = "nextPage">
+                    <a onclick = "location.href = '/staff/update/index.html'" >Xem Thông Tin Chung</a>
+                </div>
+            </div>
+            
+            <div class = "colum">
+                <div class = "nextPage">
+                    <a  href="/login/index.html" onclick = "logout()">Đăng xuất</a>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    <script src="/staff/homepage/func.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>Theo dõi đơn hàng</title>
+        <meta charset="utf-8">
+        <style>
+            
+        </style>
+        <!-- external -->
+        <link rel="stylesheet" href="./css/TheoDoiDonHang.css"> 
+        <script src="./js/TheoDoiDonHang.js"> </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>    
+    </head>
+
+    <body onpageshow="start()">
+        <header class="middle">Tình trạng đơn hàng</header>
+        <div class="container" style="width: 100%">
+            <div class="vertical-center">          
+                <!-- <label id="CuaHang", for="">Cửa hàng</label> -->
+                <label id="KhachHang", for="">Mã khách hàng</label>
+            </div>
+        </div>
+        <main>
+            <div class="order"></div> 
+            <div style="margin-top:1%;">
+                <a id="redirect" href="./index.html" role="button" style="padding: 10px 20px">
+                    <i class="glyphicon glyphicon-home" style="font-size: 20px"></i>
+                </a>
+            </div>           
+        </main>  
+    </body>
+</html>

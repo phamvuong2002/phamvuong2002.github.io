@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <form action="">
+        <div id="header-box">
+            <div id="header-container">
+                <h2>Thống Kê Hóa Đơn</h2>
+                <div id = "header-detail">
+                    <div id = "header-info" >
+                        <button name="btn_NTN" type = "submit" onclick="location.href = '../homepage/index.html'"> Quay lại</button>
+                        <input class="search-box" type="text" name="MASOTHUE" placeholder="Mã Đối Tác" required>
+    
+                        <input class="search-box" type="date" name="NGAYTHANGNAM">
+                    </div>
+                    <!-- onclick = setLoai() -->
+                    <div id = "header-btn">
+                        <button name="btn_NTN" type = "submit" onclick="setday()"> Thống Kê Theo Ngày </button>
+                        <button name="btn_NTN" type = "submit" onclick="setmonth()"> Thống Kê Theo Tháng </button>
+                        <button name="btn_NTN" type = "submit" onclick="setyear()"> Thống Kê Theo Năm </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="list">
+            <div id="list-container">
+                <div id="list-header">
+                    <p>STT</p>
+                    <p>Mã hóa đơn</p>
+                    <p>Mã khách hàng</p>
+                    <p>Đánh giá</p>
+                    <p>Tổng tiền</p>
+                </div>
+    
+                <div id="list-row-container">
+                    <!-- <div id="list-row">
+                        <label>1</label>
+                        <label >Mã HĐ</label>
+                        <label >Mã KH</label>
+                        <label >Đánh giá</label>
+                        <label >Tổng Tiền</label>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <div id = "footer-detail">
+                <div class = "footer-info">
+                    <h4> Tổng Số Hóa Đơn </h4>
+                    <!-- <label id="TSHD"> 20 </label> -->
+                </div>
+    
+                <div class = "footer-info">
+                    <h4> Tổng Tiền </h4>
+                    <!-- <label id="TTien"> 20.000.000.000.000 </label> -->
+                </div>
+    
+                <div class = "footer-info">
+                    <h4> Hoa Hồng</h4>
+                    <label id="HHong">20%</label>
+                </div>
+
+                <div class = "footer-info">
+                    <h4> SL Khách Hàng</h4>
+                    <!-- <label id="HHong">20%</label> -->
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="./func.js"></script>
+</body>
+</html>

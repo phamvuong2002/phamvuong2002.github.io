@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC ship</title>
+    <link rel="stylesheet" href="/customer/signup/assets/style.css">
+</head>
+<body>
+    <div class="register">
+       <h1>Đăng kí thông tin khách hàng</h1>
+       <h2 id = "annouce" >Nhập các thông tin cần thiết để đăng kí</h2>
+       <form method="post">
+            <div class="form_container">
+                <div class="form-col-1">
+                    <label class="form-row">
+                        Họ tên
+                        <div class="txt_field">
+                            <input type="text" name = "HOTEN" placeholder="Ex: Nguyễn Văn A" required>
+                        </div>
+                    </label>
+
+                    <label class="form-row">
+                        Địa chỉ
+                        <div class="txt_field">
+                            <input type="text" name = "DIACHI" placeholder="Ex: 227 Nguyễn Văn Cừ Quận 1 TPHCM" required>
+                        </div>
+                    </label>
+
+                    <label class="form-row">
+                        Số điện thoại
+                        <div class="txt_field">
+                            <input type="text" name = "SDT" placeholder="Ex: 088888888" required>
+                        </div>
+                    </label>
+
+                    <label class="form-row">
+                        Email
+                        <div class="txt_field">
+                            <input type="email" name = "EMAIL" placeholder="Ex: arisu0312@gmail.com" required>
+                        </div>
+                    </label>
+
+                    <label class="form-row">
+                        Mật khẩu
+                        <div class="txt_field">
+                            <input type="password" name = "MK" required>
+                        </div>
+                    </label>
+                </div>
+                
+            </div>
+            <div class = "reg-button">
+                <button onclick="getData()" type="submit" id="signupButton">Đăng kí</button>
+            </div>
+            
+       </form>
+    </div>
+    <script src="/customer/signup/func.js"></script>
+</body>
+</html>

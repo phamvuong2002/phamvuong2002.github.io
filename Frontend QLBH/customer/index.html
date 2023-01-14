@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC WEB</title>
+    <link rel="stylesheet" href="/customer/css/style.css">
+</head>
+<body>
+    <div id="header-box">
+        <h2>ABC WEB</h2>
+        <div onload="returnDriver()" id="header-detail">
+            <!-- <div class="header-row">
+                <p>Mã Khách Hàng </p>
+            </div> 
+            -->
+
+            <!-- <div class="header-row">
+                <p>Tên Khách Hàng </p>
+            </div>
+
+            <div class="header-row">
+                <p>Số điện thoại </p>
+            </div>
+            
+            <div class="header-row">
+                <p>Số Đơn Hàng Chưa Được Giao </p>
+            </div> -->
+        </div>
+    </div>
+    <div id="list-nextPage">
+        <form>
+            <div class = "nextPage">
+                <!-- href="../DH_Cho/index.html" -->
+                <a onclick = "location.href = '../customer/DanhSachMonAn.html'" >Tìm Kiếm Theo Cửa Hàng</a>
+            </div>
+            <div class = "nextPage">
+                <a  onclick = "location.href = '../customer/DanhSachCuaHang.html'">Tìm Kiếm Theo Món Ăn</a>
+            </div>
+            <div class = "nextPage">
+                <a  onclick = "location.href = '../customer/TheoDoiDonHang.html'">Theo Dõi Đơn Hàng</a>
+            </div>
+            <!-- <div class = "nextPage">
+                <a onclick = "checkStatus2('../kichhoat/index.html')" >Thông tin cá nhân</a>
+            </div> -->
+            <div class = "nextPage">
+                <a onclick = "logout_forcustomer()">Đăng xuất</a>
+            </div>
+        </form>
+    </div>
+    <script src="/customer/js/func.js"></script>
+</body>
+</html>

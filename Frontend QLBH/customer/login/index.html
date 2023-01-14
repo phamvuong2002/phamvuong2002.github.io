@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC ship</title>
+    <link rel="stylesheet" href="/customer/login/assets/style.css">
+</head>
+
+<body>
+    <div class="login-box">
+        <h1>ABC FOOD ONLINE</h1>
+        <h2>Log-in</h2>
+        <p>Enter your username and password below</p>
+        <form method="post">
+            <label>
+                USERNAME
+                <div class="txt_field">
+                    <input type="text" name="username" placeholder="username" required>
+                </div>
+            </label>
+            <label>
+                PASSWORD
+                <div class="txt_field">
+                    <input type="password" name="password" placeholder="password" required>
+                </div>
+            </label>
+
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" onclick="Login()" value="Login">    
+            <div class="signup_link">
+                Not a member? <a href="/customer/signup/index.html">Create Account</a>
+            </div>
+        </form>
+    </div>
+    <script src="/customer/login/login_script.js"></script>
+</body>
+
+</html>

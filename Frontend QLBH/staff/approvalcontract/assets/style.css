@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    padding: 10px;
+}
+
+/*---------------- HEADER-------------------*/
+h1 {
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/*----------------The div có Class="search-box": gồm ô nhập Mã Đối Tác và nút nhấn--------------*/
+.search-box { /*Chiều cao và chiều dài của thẻ này */
+    height: 0px;
+    width: 100%;
+}
+
+/*Định dạng ô nhập Mã Đối Tác*/
+.search-box input {
+    font-size: 18px;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+
+/*Định dạng nút nhấn*/
+.search-box button {
+    position: relative;
+    bottom: -20px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(7, 135, 209);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+
+/* Định dạng đường kẻ ngăn cắt phần trên và bảng*/
+hr {
+    display: block;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-style: inset;
+    border-width: 2px;
+}
+
+/* ---------------------------------BẢNG------------------------------------- */
+
+label{
+    height: 30px;
+    text-align: center;
+}
+
+#list{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+#list-container{
+    padding: 20px 150px;
+}
+
+#list-header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(150, 211, 247);
+    height: 40px;
+    text-align: center;
+}
+
+#list-header p{
+    font-weight: 600;
+    line-height: 40px;
+    width: 100%;
+}
+#list-header #width-3{
+    width: 40%;
+}
+
+/* #list-row-container{
+    display: none;
+} */
+#list-row{
+    /* display: none; */
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(173, 167, 167);
+}
+
+#list-row label, #list-row button{
+    width: 100%;
+    text-align: center;
+}
+

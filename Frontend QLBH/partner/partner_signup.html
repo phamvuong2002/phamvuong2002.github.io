@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign-in Form</title>
+    <link rel="stylesheet" href = "css/partner_signup.css">
+</head>
+<body>
+    <div class = "topnav">
+        <h3>Form Đăng Ký Thông Tin Cho Đối Tác</h3>
+    </div>
+    <form id = myform action="manage_menu.html" >
+        <div class="container">
+            <p id = "annouce">Xin hãy nhập biểu mẫu bên dưới để đăng ký.</p>
+            
+            <div class = "colum" >
+                <label for="taxcode" ><b>Mã số thuế</b></label>
+                <input type="text" placeholder="Nhập Mã số thuế" name="masothue"  required>
+            </div>
+        
+            <div class = "colum" >
+                <label for="partnername"><b>Tên Đối Tác</b></label>
+                <input type="text" placeholder="Nhập Tên Đối Tác" name="tendoitac" required>
+            </div>
+            
+            <div class = "colum">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Nhập Email" name="email" required>
+            </div>
+            
+            <div class = "colum">
+                <label for="relname"><b>Tên Người Đại Diện</b></label>
+                <input type="text" placeholder="Nhập Tên Người Đại Diện" name="nguoidaidien" required>
+            </div>
+            
+            <div class = "colum">
+                <label for="district"><b>Quận</b></label>
+                <input type="text" placeholder="Nhập Quận" name="quan" required>
+            </div>
+            
+
+            <div class = "colum">
+                <label for="numofbranch"><b>Số lượng chi nhánh</b></label>
+                <input type="text" placeholder="Nhập Số lượng chi nhánh" name="slchinhanh" required>
+            </div>
+            
+            
+            <div class = "colum">
+                <label for="numorderperday"><b>Số lượng đơn hàng dự kiến / ngày</b></label>
+                <input type="text" placeholder="EX: 20" name="sldonhangdukien" required>
+            </div>
+            
+
+            <div class = "colum">
+                <label for="foodtype"><b>Loại Thực Phẩm</b></label>
+                <input type="text" placeholder="Ex: Com" name="loaiamthuc" required>
+            </div>
+            
+
+            <div class = "colum">
+                <label for="address"><b>Địa Chỉ</b></label>
+                <input type="text" placeholder="Ex: 793 Tran Hung Dao, Quan 1 " name="diachi" required>
+            </div>
+            
+
+            <div class = "colum">
+                <label for="phone"><b>SĐT</b></label>
+                <input type="text" placeholder="Ex: 0948908485 " name="sdt" required>
+            </div>
+
+            <div class = "colum" id = "nodisplay">
+                <label ><b>Thời Gian Hợp Đồng Mong Muốn (tháng)</b></label>
+                <input type="number" placeholder="Ex: 12 " name="thoigianhopdong" required>
+            </div>
+            
+        </div>
+        <div class="button">
+                <button onclick="getData()" type="submit" id="signupButton">Gửi Thông tin cho công ty</button>
+                <button onclick="location.href='index.html'" id="signupButton">Về Trang Đăng Nhập</button>
+        </div>
+    </form>
+    <script src="js/partner_signup_script.js"></script>
+</body>
+</html>

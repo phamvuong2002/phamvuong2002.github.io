@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Thêm Món Ăn Cho Đối Tác</title>
+    <link rel="stylesheet" href = "css/add_menu_items.css">
+</head>
+<body>
+    <div class = "topnav">
+        <h3>Thêm Món Ăn</h3>
+    </div>
+
+    <form id = "myform" action="">
+        <div class = "container">
+            <div class="field">
+                <label for="tenmonan">Tên Món Ăn</label>
+                <input type="text" placeholder="Nhap ten mon an..." name="tenmon"  required>
+            </div>
+            <div class="field">
+                <label for="mieuta">Miêu Tả Món Ăn</label>
+                <input type="text" placeholder="Mieu ta mon..." name="mieuta"  required>
+            </div>
+            <div class="field">
+                <label for="gia">Giá</label>
+                <input type="text" placeholder="Nhap Gia..." name="gia"  required>
+            </div>
+            <div class="field">
+                <label for="tinhtrang">Tình Trạng Món Ăn</label>
+                <input type="text" placeholder="Dang ban/ Ngung ban..." name="tinhtrang"  required>
+            </div>
+            <div class="field">
+                <label for="ghichu">Ghi Chú</label>
+                <input type="text" placeholder="Ghi chu..." name="ghichu"  required>
+            </div>
+        </div>
+        <div class="button">
+            <button onclick="getData()" type="submit" id="abutton">Thêm</button>
+        </div>
+    </form>
+    <div class="button">
+        <button onclick="location.href = 'manage_restaurants.html'" type="submit" id="abutton" >Quản Lý Cửa Hàng</button>
+    </div>
+    <div class="button">
+        <button onclick="cancleButton()" type="submit" id="abutton" >Quay Lại</button>
+    </div>
+    <script src="js/add_menu_items_script.js"></script>
+</body>
+</html>

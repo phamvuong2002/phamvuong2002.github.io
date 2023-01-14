@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Đăng Ký Thông Tin Cửa Hàng</title>
+    <link rel="stylesheet" href = "css/partner_signup.css">
+</head>
+<body>
+    <div class = "topnav">
+        <h3>Form Đăng Ký Thông Tin Cửa Hàng Cho Đối Tác</h3>
+    </div>
+    <form id = myform action="manage_menu.html" >
+        <div class="container">
+            <p id = "announce">Xin hãy nhập biểu mẫu bên dưới để đăng ký.</p>
+        
+            <div class = "colum" >
+                <label ><b>STK Ngân Hàng</b></label>
+                <input type="text" placeholder="0123456789..." name="stk" required>
+            </div>
+            
+            <div class = "colum">
+                <label ><b>Tên Ngân Hàng</b></label>
+                <input type="text" placeholder="AGRIBANK/SACOMBANK/..." name="nganhang" required>
+            </div>
+            
+            <div class = "colum">
+                <label ><b>Tên Cửa Hàng</b></label>
+                <input type="text" placeholder="Cửa Hàng Bán Bánh..." name="tenquan" required>
+            </div>
+            
+            <div class = "colum">
+                <label><b>Giờ Mở Cửa</b></label>
+                <input type="time" placeholder="Giờ Mở Cửa..." name="giomocua" required>
+            </div>
+            
+
+            <div class = "colum">
+                <label><b>Giờ Đóng Cửa</b></label>
+                <input type="time" placeholder="Giờ Đóng Cửa..." name="giodongcua" required>
+            </div>
+            
+            
+            <div class = "colum">
+                <label><b>Tình Trạng</b></label>
+                <input type="text" placeholder="Mở Cửa/Đóng Cửa..." name="tinhtrang" required>
+            </div>
+            
+
+            <div class = "colum">
+                <label><b>Địa Chỉ</b></label>
+                <input type="text" placeholder="Ex: 793 Trần Hưng Đạo, Quận 1 " name="diachi" required>
+            </div>
+            
+            <div class="button">
+                <button onclick="getData()" type="submit" id="signupButton">Thêm Cửa Hàng</button>
+                <button onclick="location.href ='/partner/manage_restaurants.html'" type="submit" id="signupButton">Quay Lại</button>
+            </div>
+        </div>
+    </form>
+    <script src="js/add_restaurant_for_partner_scrip.js"></script>
+</body>
+</html>
