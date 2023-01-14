@@ -15,9 +15,9 @@ function createResponedDisplay(json){
             delete myObj['MK']
             const keys = Object.keys(myObj)
 
-            //delete nodisplay
-            const nodisplay = document.getElementById("nodisplay")
-            nodisplay.remove()
+            // //delete nodisplay
+            // const nodisplay = document.getElementById("nodisplay")
+            // nodisplay.remove()
             //detele input tag
             const inputtag = document.getElementsByTagName("INPUT")
             for(var i = 0; i < inputtag.length; i++) {
