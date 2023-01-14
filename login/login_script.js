@@ -11,7 +11,6 @@ function partnerLogin(){
     url = ""
     //url = url + "http://localhost:8080/api/login/partner"
     url = url + "/api/login/partner"
-    alert(url)
     url_destination = ""
     url_destination = url_destination + "/partner/"
     role = ""
