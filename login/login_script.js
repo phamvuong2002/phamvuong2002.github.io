@@ -8,11 +8,8 @@ function getData(form) {
     return values
 }
 function partnerLogin(){
-    console.log(partnerLogin)
     url = ""
-    //url = url + "http://localhost:8080/api/login/partner"
     url = BASE_URL + "/api/login/partner"
-    alert(url)
     url_destination = ""
     url_destination = url_destination + "/partner/"
     role = ""
@@ -27,7 +24,6 @@ function shipperLogin(){
     role = role + "driver"
 }
 function staffLogin(){
-    console.log(staffLogin)
     url = ""
     url = BASE_URL + "/api/login/staff"
     url_destination = ""
