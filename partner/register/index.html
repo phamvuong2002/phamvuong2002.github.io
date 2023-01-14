@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC ship</title>
+    <link rel="stylesheet" href="../register/assets/style.css">
+    
+</head>
+<body>
+    <div class="register">
+       <h1>Đăng kí thông tin đối tác</h1>
+       <p id = "annouce">Nhập các thông tin cần thiết để đăng kí:</p>
+       <form id = "signupForm">
+            <div class="form_container">
+                <div class="column">
+
+                    <label class="row">
+                        Mã số thuế
+                        <div class="txt_field">
+                            <input type="text" placeholder="Ex: TAX123456 " name="masothue"  required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Họ tên đối Tác
+                        <div class="txt_field">
+                            <input type="text" placeholder="Ex: Phạm Văn A" name="tendoitac" required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Email
+                        <div class="txt_field">
+                            <input type="email" placeholder="Ex: pva@gmail.com" name="email" required>
+                        </div>
+                    </label>
+
+    
+                    <label class="row">
+                        Tên Người Đại Diện
+                        <div class="txt_field">
+                            <input type="text" placeholder="Ex: Phạm Văn B" name="nguoidaidien" required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Quận
+                        <div class="txt_field">
+                            <input type="text" placeholder="Ex: Quận 5" name="quan" required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Số lượng chi nhánh
+                        <div class="txt_field">
+                            <input type="number" placeholder="Ex: 20" name="slchinhanh" required>
+                        </div>
+                    </label>
+                </div>
+                
+
+                <div class="column">
+                    
+                    <label class="row">
+                        Số lượng đơn hàng dự kiến / ngày
+                        <div class="txt_field">
+                            <input type="number" placeholder="EX: 100" name="sldonhangdukien" required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Loại Thực Phẩm
+                        <div class="txt_field">
+                            <input type="text" placeholder="Ex: Cơm" name="loaiamthuc" required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Địa Chỉ
+                        <div class="txt_field">
+                            <input type="text" placeholder="Ex: 793 Nguyễn Văn Cừ, Quan 5 " name="diachi" required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Số Điện Thoại
+                        <div class="txt_field">
+                            <input type="text" placeholder="Ex: 0948908485 " name="sdt" required>
+                        </div>
+                    </label>
+
+                    <label class="row">
+                        Thời Gian Hợp Đồng Mong Muốn (Tháng)
+                        <div class="txt_field">
+                            <input type="number" placeholder="Ex: 12 " name="thoigianhopdong" required>
+                        </div>
+                    </label>
+
+                </div>
+                
+            </div>
+            <div class = "reg-button">
+                <button onclick="getData()" type="submit" id="signupButton">Gửi Thông tin cho công ty</button>
+                <button onclick="location.href='index.html'" id="signupButton">Về Trang Đăng Nhập</button>
+            </div>
+            
+       </form>
+    </div>
+    <script src="./partner_signup_script.js"></script>
+</body>
+</html>
