@@ -1,4 +1,4 @@
-let url = ""
+let url = process.env.BASE_URL
 let url_destination = ""
 let role = ""
 function getData(form) {
@@ -9,7 +9,8 @@ function getData(form) {
 function partnerLogin(){
     console.log(partnerLogin)
     url = ""
-    url = url + "http://localhost:8080/api/login/partner"
+    //url = url + "http://localhost:8080/api/login/partner"
+    url = url + "/api/login/partner"
     url_destination = ""
     url_destination = url_destination + "/partner/"
     role = ""
