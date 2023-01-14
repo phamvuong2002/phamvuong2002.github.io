@@ -1,5 +1,6 @@
-let url = "http://localhost:8080/api/driver/getdriverbyid/"
-const url_updatepassword = "http://localhost:8080/api/driver/updatepassword"
+const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+let url = BASE_URL + "/api/driver/getdriverbyid/"
+let url_updatepassword = BASE_URL + "/api/driver/updatepassword"
 
 
 

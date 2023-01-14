@@ -1,4 +1,5 @@
-var url = "http://localhost:8080/api/driver/selectctdh/"
+const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+let url = BASE_URL + "/api/driver/selectctdh/"
 
 const madh = localStorage.getItem('madh')
 const matx = localStorage.getItem('matx')

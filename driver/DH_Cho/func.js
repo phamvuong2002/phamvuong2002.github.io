@@ -1,5 +1,6 @@
-const url = "http://localhost:8080/api/driver/selectdoncho"
-const url_updateTTCHO = "http://localhost:8080/api/driver/updatetinhtrangcho"
+const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+let url = BASE_URL + "/api/driver/selectdoncho"
+let url_updateTTCHO = BASE_URL + "/api/driver/updatetinhtrangcho"
 
 var toTextRestaurant ={
     "MADONHANG": "Mã hóa đơn: ",

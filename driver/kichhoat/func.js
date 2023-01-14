@@ -1,4 +1,5 @@
-var url_updateNOPPHI = "http://localhost:8080/api/driver/updatenopphi/";
+const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+let url_updateNOPPHI = BASE_URL + "/api/driver/updatenopphi/";
 
 //hiển thị tình trạng khi chưa nộp phí
 
