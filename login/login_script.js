@@ -1,4 +1,5 @@
-let url = "https://ab3d-14-227-8-111.ap.ngrok.io"
+const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+let url = ""
 let url_destination = ""
 let role = ""
 function getData(form) {
