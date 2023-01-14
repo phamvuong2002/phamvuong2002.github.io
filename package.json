@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/phamvuong2002/phamvuong2002.github.io/issues"
   },
-  "homepage": "https://github.com/phamvuong2002/phamvuong2002.github.io#readme"
+  "homepage": "https://github.com/phamvuong2002/phamvuong2002.github.io#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
 }
