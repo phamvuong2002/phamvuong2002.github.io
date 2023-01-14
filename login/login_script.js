@@ -19,7 +19,6 @@ function partnerLogin(){
     role = role + "partner"
 }
 function shipperLogin(){
-    console.log(shipperLogin)
     url = ""
     url = BASE_URL + "/api/login/driver"
     url_destination = ""
