@@ -1,6 +1,4 @@
-//require('dotenv').config();
-const { NODE_ENV_URL } = process.env;
-let url = NODE_ENV_URL
+let url = "https://ab3d-14-227-8-111.ap.ngrok.io"
 let url_destination = ""
 let role = ""
 function getData(form) {
