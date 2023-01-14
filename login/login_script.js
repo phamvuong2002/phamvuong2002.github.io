@@ -1,4 +1,4 @@
-console.log(process)
+require('dotenv').config();
 const { NODE_ENV_URL } = process.env;
 let url = NODE_ENV_URL
 let url_destination = ""
