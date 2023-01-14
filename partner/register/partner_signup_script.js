@@ -30,13 +30,13 @@ function createResponedDisplay(json){
             const colum = document.getElementsByClassName("colum")
             document.getElementById('annouce').innerText = 'Chúc Mừng Bạn Đã Đăng Ký Thông Tin Thành Công. Hợp Đồng '+ json[1][0].MAHOPDONG + ' Đang Chờ Duyệt. Chúng tôi sẽ gửi thư phản hồi trong vòng từ 3-5 ngày vào email đã đăng ký: '+ myObj['EMAIL']
 
-            for (let i = 0 ; i< colum.length; i++)
-            {   
-                //create new h4 to display signed up info
-                const h4 = document.createElement("h4")
-                h4.appendChild(document.createTextNode(myObj[keys[i]]))
-                colum[i].appendChild(h4)
-            }
+            // for (let i = 0 ; i< colum.length; i++)
+            // {   
+            //     //create new h4 to display signed up info
+            //     const h4 = document.createElement("h4")
+            //     h4.appendChild(document.createTextNode(myObj[keys[i]]))
+            //     colum[i].appendChild(h4)
+            // }
             
             //remove sign up button
             const button = document.getElementById("signupButton")
