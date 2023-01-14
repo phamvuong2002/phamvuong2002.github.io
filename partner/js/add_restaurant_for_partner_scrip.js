@@ -1,4 +1,5 @@
-const url = "http://localhost:8080/api/addrestaurants";
+const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+let url = BASE_URL + "/api/addrestaurants";
 
 const toTextRestaurant ={
     "MACUAHANG": "Mã Cửa Hàng: ",

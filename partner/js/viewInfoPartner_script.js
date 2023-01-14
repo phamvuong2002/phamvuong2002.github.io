@@ -1,5 +1,6 @@
-const url = "http://localhost:8080/api/parnersByID/"
-const url_updatepassword = "http://localhost:8080/api/partner/updatepassword"
+const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+let url = BASE_URL + "/api/parnersByID/"
+let url_updatepassword = BASE_URL + "/api/partner/updatepassword"
 
 const masothue = sessionStorage.getItem("masothue")
 

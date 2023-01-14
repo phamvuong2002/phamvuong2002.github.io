@@ -1,5 +1,6 @@
-const url = "http://localhost:8080/api/menu/"
-const url_addfood = "http://localhost:8080/api/partner/addfoodforrestaurant"
+const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+let url = BASE_URL + "/api/menu/"
+let url_addfood = BASE_URL + "/api/partner/addfoodforrestaurant"
 
 ///-------------------TEST public API-------------------
 // const url = "https://a4b7-1-52-147-128.ap.ngrok.io/api/menu/"

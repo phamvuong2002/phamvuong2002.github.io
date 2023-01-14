@@ -1,10 +1,10 @@
 //const { data } = require("@tensorflow/tfjs-node");
 
 //const { data } = require("@tensorflow/tfjs-node")
-
-const url_search = "http://localhost:8080/api/partner/findmenuitem"
-const url_delete = "http://localhost:8080/api/deletemenuitem/"
-const url_update = "http://localhost:8080/api/partner/updatemenuitem/"
+const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+let url_search = BASE_URL + "/api/partner/findmenuitem"
+let url_delete = BASE_URL + "/api/deletemenuitem/"
+let url_update = BASE_URL + "/api/partner/updatemenuitem/"
 
 //---------------TEST public API-------------
 

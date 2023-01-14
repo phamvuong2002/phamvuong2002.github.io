@@ -1,5 +1,6 @@
-const url = "http://localhost:8080/api/partner/listfoodforrestaurant"
-const url_delete = "http://localhost:8080/api/partner/deletefoodforrestaurant"
+const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+let url = BASE_URL + "/api/partner/listfoodforrestaurant"
+let url_delete = BASE_URL + "/api/partner/deletefoodforrestaurant"
 
 ///-------------------TEST public API-------------------
 // const url = "https://a4b7-1-52-147-128.ap.ngrok.io/api/menu/"

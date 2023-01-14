@@ -1,4 +1,5 @@
-const url = "http://localhost:8080/api/addmenuitem";
+const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+let url =  BASE_URL + "/api/addmenuitem";
 const masothue = sessionStorage.getItem("masothue")
 
 //----------------TEST public API-----------------------

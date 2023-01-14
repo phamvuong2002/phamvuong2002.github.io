@@ -1,5 +1,6 @@
 //const url = "https://webhook.site/f1de2a56-4094-4692-bacb-d4013b7e67de";
-const url = "http://localhost:8080/api/addparner";
+const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+let url = BASE_URL + "/api/addparner";
 //--------------------------TEST public API------------------
 // const url = "https://a4b7-1-52-147-128.ap.ngrok.io/api/addparner";
 

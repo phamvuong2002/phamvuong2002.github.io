@@ -1,5 +1,6 @@
-const url = "http://localhost:8080/api/restaurantbyresid/" 
-const url_update = "http://localhost:8080/api/updaterestaurant"
+const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+let url = BASE_URL + "/api/restaurantbyresid/" 
+let url_update = BASE_URL + "/api/updaterestaurant"
 
 const masothue = localStorage.getItem('update_masothue')
 const macuahang = localStorage.getItem('update_macuahang')
