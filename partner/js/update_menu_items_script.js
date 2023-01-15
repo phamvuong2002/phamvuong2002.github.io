@@ -1,7 +1,7 @@
 //const { data } = require("@tensorflow/tfjs-node");
 
 //const { data } = require("@tensorflow/tfjs-node")
-const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+const BASE_URL = sessionStorage.getItem('baseUrl');
 let url_search = BASE_URL + "/api/partner/findmenuitem"
 let url_delete = BASE_URL + "/api/deletemenuitem/"
 let url_update = BASE_URL + "/api/partner/updatemenuitem/"

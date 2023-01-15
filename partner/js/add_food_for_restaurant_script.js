@@ -1,4 +1,4 @@
-const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+const BASE_URL = sessionStorage.getItem('baseUrl');
 let url = BASE_URL + "/api/menu/"
 let url_addfood = BASE_URL + "/api/partner/addfoodforrestaurant"
 
