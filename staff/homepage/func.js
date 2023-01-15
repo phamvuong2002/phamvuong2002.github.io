@@ -1,10 +1,10 @@
 const jsonstaff = JSON.parse(sessionStorage.getItem("jsonstaff"))
-
-console.log(JSON.stringify(jsonstaff.VAITRO).substring(1,5)) 
-
 if(jsonstaff === null){
     location.href = "/login/"
 }
+console.log(JSON.stringify(jsonstaff.VAITRO).substring(1,5)) 
+
+
 
 // hàm đăng xuất
 function logout(){
