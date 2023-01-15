@@ -1,4 +1,5 @@
 const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+sessionStorage.setItem('baseUrl', BASE_URL)
 let url = ""
 let url_destination = ""
 let role = ""
