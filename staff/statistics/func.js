@@ -1,4 +1,5 @@
-const url = "http://localhost:8080/api/staff/statisticbill";
+const BASE_URL = sessionStorage.getItem('baseUrl')
+let url = BASE_URL + "/api/staff/statisticbill";
 
 const jsonstaff = JSON.parse(sessionStorage.getItem("jsonstaff"))
 if(jsonstaff === null){

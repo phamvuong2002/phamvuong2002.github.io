@@ -1,5 +1,6 @@
-const url = "http://localhost:8080/api/staff/listapprovalstaff";
-const url_update = "http://localhost:8080/api/staff/duyetnhanvien"
+const BASE_URL = sessionStorage.getItem('baseUrl');
+let url = BASE_URL + "/api/staff/listapprovalstaff";
+let url_update = BASE_URL + "/api/staff/duyetnhanvien"
 const jsonstaff = JSON.parse(sessionStorage.getItem("jsonstaff"))
 
 if(jsonstaff === null){

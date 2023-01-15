@@ -1,5 +1,6 @@
-let url = "http://localhost:8080/api/staff/getstaffID/" 
-const url_update = "http://localhost:8080/api/staff/update"
+const BASE_URL = sessionStorage.getItem('baseUrl')
+let url = BASE_URL + "/api/staff/getstaffID/" 
+let url_update = BASE_URL + "/api/staff/update"
 
 const jsonstaff = JSON.parse(sessionStorage.getItem("jsonstaff"))
 if(jsonstaff === null){

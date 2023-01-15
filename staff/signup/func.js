@@ -1,4 +1,5 @@
-const url = "http://localhost:8080/api/staff/createstaff";
+const BASE_URL =  sessionStorage.getItem('baseUrl')
+let url = BASE_URL + "/api/staff/createstaff";
 
 function createResponedDisplay(json){
     //----------------CREATE NEW DISPLAY--------------------

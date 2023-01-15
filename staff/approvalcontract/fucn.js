@@ -1,5 +1,6 @@
-const url = "http://localhost:8080/api/staff/listcontract";
-const url_update = "http://localhost:8080/api/staff/updatenvduyethd"
+const BASE_URL = sessionStorage.getItem('baseUrl');
+let url = BASE_URL + "/api/staff/listcontract";
+let url_update = BASE_URL + "/api/staff/updatenvduyethd"
 const jsonstaff = JSON.parse(sessionStorage.getItem("jsonstaff"))
 if(jsonstaff === null){
     location.href = '/login/'
