@@ -1,5 +1,5 @@
 const BASE_URL = "https://351b-113-187-79-109.ap.ngrok.io"
-sessionStorage.setItem('baseUrl', BASE_URL)
+sessionStorage.setItem('baseUrl', BASE_URL) //local storage BASE_URL
 let url = ""
 let url_destination = ""
 let role = ""
