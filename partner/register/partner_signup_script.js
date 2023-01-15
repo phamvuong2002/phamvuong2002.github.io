@@ -1,18 +1,19 @@
 //const url = "https://webhook.site/f1de2a56-4094-4692-bacb-d4013b7e67de";
-const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+const BASE_URL = sessionStorage.getItem('baseUrl')
 let url = BASE_URL + "/api/addparner";
 //--------------------------TEST public API------------------
 // const url = "https://a4b7-1-52-147-128.ap.ngrok.io/api/addparner";
 
 
 
-function createResponedDisplay(json){
+function createResponedDisplay(json,thoigianhopdong){
     //----------------CREATE NEW DISPLAY--------------------
             //get values of resopned JSON
             let myObj = json[0][0]
             console.log(myObj)
             delete myObj['MANV']
             delete myObj['MK']
+            myObj['THOIGIANHOPDONG'] = thoigianhopdong
             const keys = Object.keys(myObj)
 
             // //delete nodisplay
@@ -30,20 +31,21 @@ function createResponedDisplay(json){
             const colum = document.getElementsByClassName("colum")
             document.getElementById('annouce').innerText = 'Chúc Mừng Bạn Đã Đăng Ký Thông Tin Thành Công. Hợp Đồng '+ json[1][0].MAHOPDONG + ' Đang Chờ Duyệt. Chúng tôi sẽ gửi thư phản hồi trong vòng từ 3-5 ngày vào email đã đăng ký: '+ myObj['EMAIL']
 
-            // for (let i = 0 ; i< colum.length; i++)
-            // {   
-            //     //create new h4 to display signed up info
-            //     const h4 = document.createElement("h4")
-            //     h4.appendChild(document.createTextNode(myObj[keys[i]]))
-            //     colum[i].appendChild(h4)
-            // }
+            const label = document.getElementsByClassName("row")
+            for (let i = 0 ; i< label.length; i++)
+            {   
+                //create new h4 to display signed up info
+                const h3 = document.createElement("h3")
+                h3.appendChild(document.createTextNode(myObj[keys[i]]))
+                label[i].appendChild(h3)
+            }
             
             //remove sign up button
             const button = document.getElementById("signupButton")
             button.remove()
 
             //create new button to link manage_menu page
-            const divbutton = document.getElementsByClassName("button")// tag contain button
+            const divbutton = document.getElementsByClassName("reg-button")// tag contain button
             const newbutton = document.createElement("button")
             newbutton.setAttribute("id", "signupButton")//set id
             newbutton.appendChild(document.createTextNode("Đăng Ký Mới"))
@@ -87,7 +89,7 @@ formEl.addEventListener("submit", async (e) => {
             console.log(data)
         }
         else {
-            createResponedDisplay(json)
+            createResponedDisplay(json,jsonObject['thoigianhopdong'])
         }
         
     } catch (e) {
