@@ -13,7 +13,7 @@ function logout_forcustomer(){
     location.reload()
 }
 
-function returnDriver(){
+function returnCustomer(){
     const customerInfo = Object.values(jsoncustomer);
     const header = document.getElementById("header-detail");
     
@@ -29,4 +29,4 @@ function returnDriver(){
 }
 
 //Display info of Customer
-returnDriver();
+returnCustomer();

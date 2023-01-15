@@ -3,6 +3,7 @@ if(jsoncustomer === null){
     location.href = '/customer/login/index.html'
 }
 
+const BASE_URL = sessionStorage.getItem('baseUrl')
 const dataTable = document.createElement('table');
 var good = [];
 localStorage.setItem('good', JSON.stringify(good));
@@ -19,7 +20,7 @@ function start() {
   // id = document.getElementById('store').value;
   id = jsoncustomer.MAKH // update later
   document.getElementById("KhachHang").innerHTML = id; // update later
-  const url = `http://localhost:8080/api/customer/order/${id}`;
+  let url = BASE_URL + "/api/customer/order/" + id;
   // alert(url);
 
   fetch(url)
@@ -78,13 +79,15 @@ function start() {
       // console.log(i+1 + ":", data[i].DANHGIA);
       // console.log(data[3].DANHGIA);
       if(data[i].DANHGIA.localeCompare('0/5') != 0){
-        button.setAttribute("disabled", "true");
         button.innerText = "Đã đánh giá";
+        button.onclick = () => {
+          alert("Đơn hàng đã đánh giá rồi!")
+        };
       }
       else{
         // button.setAttribute("disabled", "false");
         button.innerText = "Đánh giá";
-        if(data[i].TINHTRANG.trim() == 'Đã Giao'){
+        if(data[i].TINHTRANG.trim() === 'Đã Giao'){
           button.onclick = () => {
             var store = dataTable.rows[i+1].cells[1].innerHTML;
             var sum = dataTable.rows[i+1].cells[2].innerHTML;
@@ -94,6 +97,11 @@ function start() {
             localStorage.setItem('good', JSON.stringify(good));
             console.log(good);
             location.href="DanhGia.html";
+          };
+        }
+        else{
+          button.onclick = () => {
+            alert("Không thể đánh giá đơn hàng chưa giao!")
           };
         }
         // console.log(i+1 , data[i].TINHTRANG.trim());

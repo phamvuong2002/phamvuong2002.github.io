@@ -1,3 +1,5 @@
+const BASE_URL = "https://4069-14-227-8-111.ap.ngrok.io"
+sessionStorage.setItem('baseUrl', BASE_URL) //local storage BASE_URL
 let url = ""
 let url_destination = ""
 let role = ""
@@ -8,7 +10,7 @@ function getData(form) {
 }
 function Login(){
     url = ""
-    url = url + "http://localhost:8080/api/login/customer"
+    url = BASE_URL + "/api/login/customer"
     url_destination = ""
     url_destination = url_destination + "/customer/index.html"
     role = ""

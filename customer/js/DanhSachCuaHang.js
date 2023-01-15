@@ -1,5 +1,6 @@
 var id = null;
 var order = JSON.parse(localStorage.getItem('order') || '[]');
+const BASE_URL = sessionStorage.getItem('baseUrl')
 
 const toText= {
     "TENQUAN": "Tên cửa hàng",
@@ -35,7 +36,7 @@ function getStores(){
     start();
     
     id = document.getElementById('disk').value;
-    const url = `http://localhost:8080/api/customer/disk/${id}`;
+    let url = BASE_URL + "/api/customer/disk/" +  id;
     // alert(url);
 
     fetch(url)

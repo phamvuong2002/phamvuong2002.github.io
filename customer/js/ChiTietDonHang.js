@@ -2,6 +2,10 @@ const jsoncustomer = JSON.parse(sessionStorage.getItem("jsoncustomer"))
 if(jsoncustomer === null){
     location.href = '/customer/login/index.html'
 }
+const BASE_URL = sessionStorage.getItem('baseUrl')
+let url1 = BASE_URL + "/api/customer/addOrder";
+let url2 = BASE_URL + "/api/customer/addOrderStore";
+let url3 = BASE_URL + "/api/customer/addOrderDetail";
 
 var order = JSON.parse(localStorage.getItem('order') || '[]');
 const dataTable = document.createElement('table');
@@ -201,7 +205,7 @@ function pay(){
       console.log("orderDetailJS:", JSON.stringify(orderDetail));
       // console.log("length", orderDetail.length);
       
-      const url1 = `http://localhost:8080/api/customer/addOrder`;
+      
       const response = fetch(url1, {
       method: 'POST',
       headers: {
@@ -216,7 +220,6 @@ function pay(){
         console.log(JSON.stringify(response[0].ERROR));
         console.log(JSON.stringify(response));  
         if((typeof JSON.stringify(response[0].ERROR) === 'undefined')){
-          const url2 = `http://localhost:8080/api/customer/addOrderStore`;
           // for(let i = 0; i < orderStore.length; i++){
           fetch(url2, {
           method: 'POST',
@@ -230,7 +233,6 @@ function pay(){
           .then(OrdSt => console.log(JSON.stringify(OrdSt)));
           // }
 
-          const url3 = `http://localhost:8080/api/customer/addOrderDetail`;
           for(let i = 0; i < orderDetail.length; i++){
             fetch(url3, {
             method: 'POST',

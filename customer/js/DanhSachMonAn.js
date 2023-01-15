@@ -5,6 +5,7 @@ if(jsoncustomer === null){
 var id = null;
 var order = JSON.parse(localStorage.getItem('order') || '[]');
 var store = JSON.parse(localStorage.getItem('store') || '[]');
+const BASE_URL = sessionStorage.getItem('baseUrl')
 
 const toText= {
     "TENQUAN": "Tên cửa hàng",
@@ -42,11 +43,11 @@ function getDisks(){
     $('.food').empty();
 
     id = document.getElementById('store').value;
-    var url = `http://localhost:8080/api/customer/${id}`;
+    var url = BASE_URL +  "/api/customer/" + id;
     console.log("url customer", url)
 
     if(store != ""){
-        url = `http://localhost:8080/api/customer/${store}`;
+        url = BASE_URL + "/api/customer/" + store;
         store = "";
         localStorage.setItem('store', JSON.stringify(store));
     }
@@ -64,6 +65,7 @@ function getDisks(){
             data.map((values) => {    
                 if(Object.keys(data[0]) == 'ERROR'){
                     alert("ERROR: " + data[0].ERROR)
+                    window.location.reload()
                 }  
                 else{
                     location.reload()

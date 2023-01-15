@@ -2,6 +2,8 @@ const jsoncustomer = JSON.parse(sessionStorage.getItem("jsoncustomer"))
 if(jsoncustomer === null){
     location.href = '/customer/login/index.html'
 }
+const BASE_URL = sessionStorage.getItem('baseUrl')
+let url = BASE_URL + "/api/customer/addFeedback";
 
 var disabled = JSON.parse(localStorage.getItem('disabled') || '[]');
 var good = JSON.parse(localStorage.getItem('good') || '[]');
@@ -28,7 +30,6 @@ function confirm(){
     // console.log("data", obj);
     // console.log("data", data.MADONHANG);
 
-    const url = `http://localhost:8080/api/customer/addFeedback`;
     fetch(url, {
       method: 'POST',
       headers: {
