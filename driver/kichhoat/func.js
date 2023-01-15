@@ -1,4 +1,4 @@
-const BASE_URL = "https://ab3d-14-227-8-111.ap.ngrok.io"
+const BASE_URL = sessionStorage.getItem('baseUrl')
 let url_updateNOPPHI = BASE_URL + "/api/driver/updatenopphi/";
 
 //hiển thị tình trạng khi chưa nộp phí
