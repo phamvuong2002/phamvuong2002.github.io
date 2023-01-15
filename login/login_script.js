@@ -37,7 +37,7 @@ formEl.addEventListener("submit", async (e) => {
     e.preventDefault();
     const jsonObject = getData(e.target);
     console.log(jsonObject)
-    console.log('fetch:',url)
+    console.log('fetch url:',url)
     try {
         const response = await fetch(url, {
         method: "POST",
