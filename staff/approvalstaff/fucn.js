@@ -26,7 +26,7 @@ async function approval(mvql,nv){
         alert("ERROR: " + data[0].ERROR)
     }
     else{
-        alert("Duyệt Nhân Viên Thành Công!")
+        alert(data[0].RESULT)
         location.reload()
     }
 }
