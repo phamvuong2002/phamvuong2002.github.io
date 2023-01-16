@@ -68,7 +68,7 @@ String.prototype.hashCode = function() {
   }
   const hashStr = hash.toString();
   if(hashStr[0] === '-'){
-    return hashStr.replace("-","NV")
+    return hashStr.replace("-","02")
   }
   return hashStr;
 }
@@ -78,7 +78,7 @@ formEl.addEventListener("submit", async (e) => {
     e.preventDefault();
     const jsonObject = getData(e.target);
     const StrMaNV = jsonObject.CMND + jsonObject.HOTEN
-    const MANV = StrMaNV.hashCode()
+    const MANV = 'NV' + StrMaNV.hashCode()
     jsonObject["MANV"] = MANV
     console.log("thong tin NV: ",jsonObject)
     console.log(jsonObject)
