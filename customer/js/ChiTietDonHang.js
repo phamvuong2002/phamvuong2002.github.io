@@ -123,7 +123,7 @@ function start(){
   }
 }
 
-function pay(){
+async function pay(){
   var payment = document.getElementById('payment').value;
   var ship = document.getElementById('ship').textContent;
   var sum = document.getElementById('sum').textContent;
@@ -206,7 +206,7 @@ function pay(){
       // console.log("length", orderDetail.length);
       
       
-      const response = fetch(url1, {
+      const response = await fetch(url1, {
       method: 'POST',
       headers: {
           'Accept': 'application/json',
