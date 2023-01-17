@@ -1,4 +1,4 @@
-const BASE_URL = "https://1980-113-187-79-109.ngrok.io"
+const BASE_URL = "https://2fe2-113-187-79-109.jp.ngrok.io"
 sessionStorage.setItem('baseUrl', BASE_URL) //local storage BASE_URL
 let url = ""
 let url_destination = ""
